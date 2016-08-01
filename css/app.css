@@ -1,5 +1,43 @@
+a:hover {
+  cursor: pointer;
+}
+
 .mdl--centered {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  overflow: visible;
+}
+
+.mdl-layout__content {
+  padding: 20px;
+}
+
+.card-square > .mdl-card__title {
+  color: #39444d;
+}
+
+.mdl-data-table {
+  margin: auto;
+  max-width: 960px;
+  white-space: normal;
+}
+
+.term-title,
+.score {
+  display: inline-block;
+}
+
+.score {
+  float: right;
+  padding: 6px;
+  background-color: #fafafa;
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.breadcrumb {
+  display: block;
 }

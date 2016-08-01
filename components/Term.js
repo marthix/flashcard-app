@@ -2,16 +2,33 @@ import React, { Component } from 'react'
 import { browserHistory } from 'react-router'
 import { connect } from 'react-redux'
 import store from './_ReduxStore'
+import Link from './Link'
 
 class Term extends Component {
-  onClick() {
-    // Redirect back to list route
-  }
-
   render() {
-    // Add description, and make this look way better
-    // onClick redirect them to /
-    return <h1>{this.props.route.topic}</h1>
+    return <div>
+      <Link route="/html">{this.props.route.breadcrumb}</Link>
+      <h1 className="term-title">{this.props.route.topic}</h1>
+      <p className="score">Score: 0</p>
+      <table className="mdl-data-table mdl-js-data-table">
+        <thead>
+          <tr>
+            <th className="mdl-data-table__cell--non-numeric">Please click the correct definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="mdl-data-table__cell--non-numeric">{this.props.route.definition}</td>
+          </tr>
+          <tr>
+            <td className="mdl-data-table__cell--non-numeric">2</td>
+          </tr>
+          <tr>
+            <td className="mdl-data-table__cell--non-numeric">3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   }
 }
 

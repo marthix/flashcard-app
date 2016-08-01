@@ -1,0 +1,46 @@
+$darkgray:      #39444d;
+$white:         #ffffff;
+
+a:hover {
+  cursor: pointer;
+}
+
+.mdl--centered {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.mdl-layout__content {
+  padding: 20px;
+}
+
+.card-square > .mdl-card__title {
+  color: $darkgray;
+}
+
+.mdl-data-table {
+  margin: auto;
+  max-width: 960px;
+  white-space: normal;
+}
+
+.term-title,
+.score {
+  display: inline-block;
+}
+
+.score {
+  float: right;
+  padding: 6px;
+  background-color: darken($white, 2);
+  border: 2px solid darken($white, 6);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.breadcrumb {
+  display: block;
+}
